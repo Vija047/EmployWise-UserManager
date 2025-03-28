@@ -92,7 +92,7 @@ To deploy the project:
 
 1. Build the project:
    ```bash
-   npm run build
+    npm run dev
    ```
 2. Deploy to platforms like **Vercel**, **Netlify**, or **GitHub Pages**.
 
