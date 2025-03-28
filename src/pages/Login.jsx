@@ -19,7 +19,6 @@ const Login = () => {
   const handleLogin = async (e) => {
     e.preventDefault();
     setError(null);
-    navigate("/users");
 
     try {
       const response = await fetch("https://reqres.in/api/login", {
@@ -31,8 +30,12 @@ const Login = () => {
       const data = await response.json();
 
       if (response.ok) {
-        login(data.token);
-        navigate("/users");
+        if (email === "eve.holt@reqres.in" && password === "cityslicka") {
+          login(data.token);
+          navigate("/users");
+        } else {
+          setError("Invalid email or password. Please use the provided credentials.");
+        }
       } else {
         setError(data.error || "Invalid credentials");
       }
