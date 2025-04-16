@@ -112,4 +112,4 @@ This project is licensed under the MIT License.
 
 [GitHub Repo](https://github.com/Vija047/EmployWise-UserManager)
 
-[Demo]()
+[Demo](https://employ-wise-user-manager-nfif.vercel.app/)
